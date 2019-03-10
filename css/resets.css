@@ -1,0 +1,68 @@
+.bg-img_wrap {
+  min-height: 907px;
+  background: #000000 url(/img/main-section/main-bg.jpg) center no-repeat;
+}
+
+header {
+  padding-top: 30px;
+}
+
+.header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header-logotitle {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.header-logo {
+  padding-top: 8px;
+}
+
+.header-phone {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.header-btn {
+  width: 184px;
+  height: 49px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  outline: none;
+}
+
+button {
+  border-radius: 50px;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=resets.css.map */
