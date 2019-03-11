@@ -3,7 +3,7 @@
 
  
 body
- font-family: 'Roboto', sans-serif
+ font-family: 'Roboto'
  box-sizing: border-box
  margin: 0
  padding: 0
@@ -16,7 +16,9 @@ button
  border-radius: 50px
  color: #ffffff
  outline: none 
+ border: none
  cursor: pointer
+ font-family: 'Roboto'
 
 ul 
  padding: 0
@@ -27,6 +29,9 @@ li
 
 .navi-search 
  position: relative
+ display: inline-block
+ top: -4px
+
  input 
   outline: none
   cursor: pointer
@@ -34,11 +39,22 @@ li
   height: 28px
   width: 0
   border: none
-  border-radius: 50%
+  border-radius: 50px
+  transition: 1s
   background-color: #0b5e8f
   background-image: linear-gradient(to top, rgba(11, 94, 143, 0.41) 0%, rgba(109, 161, 192, 0.41) 50%, rgba(11, 94, 143, 0.41) 100%)
- img
+ input:focus
+  width: 150px
+  padding-left: 15px
+  color: #ffffff
+
+.navi-search::before
+  content: ''
   position: absolute
-  top: 8px
-  left: 8px
-  
+  background: transparent url(../img/main-section/search-ico.png) center no-repeat
+  width: 16px
+  height: 16px 
+  display: block
+  cursor: pointer
+  top: 5px
+  right: 7px
