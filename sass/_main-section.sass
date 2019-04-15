@@ -1,10 +1,7 @@
-.bg-img_wrap
- height: 907px
- background: #ffffff url(/img/main-section/main-bg.jpg) center no-repeat
-
 header 
- padding-top: 60px 
- 
+  z-index: 3
+  
+  
 .header
  &-wrap
   // border: 1px solid red 
@@ -69,7 +66,11 @@ header
 // main-section
 
 .main 
- margin-top: 150px
+ z-index: 0  !important
+ width: 1110px
+ margin-left: auto
+ margin-right: auto
+ margin-top: 100px
  &-block
   &__title
    width: 544px
@@ -94,37 +95,51 @@ header
 // services section
 .services
   margin-top: 200px
-  color: #000000
   background-color: #f8f8f8
   &-main *
     // border: 1px solid red
   &-main 
     background-color: #f8f8f8
-    border: 1px solid red
     position: relative
     top: -115px
     &__title
-      margin-bottom: 60px
-      margin-top: 60px
+      padding-bottom: 60px
+      padding-top: 60px
       color: #242830
       text-align: center
       font-size: 23px
       font-weight: 700
       line-height: 24px
       text-transform: uppercase
+    &__title:after
+      content: ''
+      display: inline-block
+      vertical-align: super
+      margin-left: 35px
+      width: 106px
+      height: 2px
+      background-image: url(/img/news/news-title.png) 
+    &__title:before
+      content: ''
+      display: inline-block
+      vertical-align: super
+      margin-right: 35px
+      width: 106px
+      height: 2px
+      background-image: url(/img/news/news-title.png)
+    
     &__blocks 
       display: flex
       flex-flow: wrap
       justify-content: center
-      
       &___block
         display: flex
         background-color: #ffffff
-        align-items: stretch
+        align-items: center
         justify-content: space-between 
         width: 340px
         height: 178px
-        margin: 5px
+        margin: 3px
         padding: 30px 27px 30px 50px
         position: relative
         &___wrap
@@ -132,17 +147,134 @@ header
           &___title
             text-align: right
             font-size: 16px
+            color: #242830
             font-weight: 700
             letter-spacing: 0.32px
             line-height: 24px
-            
           &___btn
-            text-align: right
-            
-            right: 0
-          &___image
-          
-          
+            width: 153px
+            height: 49px
+            border-radius: 25px
+            border: 2px solid #242830
+            background-color: transparent
+            color: #242830
+            margin-top: 20px
+            display: none
+      &___block:hover .services-main__blocks___block___wrap___btn
+        display: block
+        border: 2px solid #fff
+        background-color: transparent
+        color: #fff  
+      &___block:hover .services-main__blocks___block___wrap___title
+        color: #fff 
+      &___block:hover
+        background-color: #242830
+      &___block:hover .services-main__blocks___block___image2
+        display: block
+      &___block:hover .services-main__blocks___block___image
+        display: none
+      &___block___image2
+        display: none      
+
+// info block
+.info-block
+  display: flex
+  align-items: center
+  flex-flow: wrap-reverse
+  color: #242830
+  &_img
+    img
+      width: 100%
+  &_text 
+    padding: 55px
+    &__title
+      margin-bottom: 15px
+      font-size: 23px
+      font-weight: 700
+      line-height: 24px
+      text-transform: uppercase
+    &__small
+      margin-bottom: 50px
+      font-size: 15px
+    &__descr
+      font-size: 15px
+      max-width: 455px
+      line-height: 24px
+
+// news block
+.news
+  padding-top: 60px
+  padding-bottom: 70px
+  background-color: #f8f8f8
+  color: #242830
+  &-title 
+    padding-bottom: 50px
+    font-size: 23px
+    font-weight: 700
+    line-height: 24px
+    letter-spacing: 0.46px
+    text-align: center
+  &-title:after
+    content: ''
+    display: inline-block
+    vertical-align: super
+    margin-left: 35px
+    width: 106px
+    height: 2px
+    background-image: url(/img/news/news-title.png) 
+  &-title:before
+    content: ''
+    display: inline-block
+    vertical-align: super
+    margin-right: 35px
+    width: 106px
+    height: 2px
+    background-image: url(/img/news/news-title.png)
+  &-blocks 
+    display: flex
+    justify-content: center
+    flex-flow: wrap
+    div:nth-of-type(1n+2)
+      margin-left: 12px
+    &__block 
+      width: 291px
+      margin-bottom: 12px
+      background-color: #fff
+      position: relative
+    &__block
+      &___img        
+        img
+          filter: brightness(70%)
+          width: 100%
+          height: auto
+          transition: .5s ease-in-out
+      &___descr
+        margin: 0
+        padding-top: 40px
+        padding-bottom: 35px
+        text-align: center
+        font-size: 16px
+        font-weight: 700
+        line-height: 24px
+        letter-spacing: 0.32px
+      span
+        display: block
+        padding-left: 26px
+        padding-bottom: 26px
+        font-size: 15px
+        font-weight: 400
+        line-height: 24px
+        text-transform: uppercase
+        letter-spacing: 0.3px
+.news-blocks__block___img:hover img
+  filter: brightness(100%)
+  cursor: pointer
+
+
+
+
+
+
         
         
   
