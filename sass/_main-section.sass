@@ -64,13 +64,15 @@ header
 
 
 // main-section
-
+.main-sc
+  position: relative
+  height: 907px
+  z-index: 0
 .main 
- z-index: 0  !important
- width: 1110px
  margin-left: auto
  margin-right: auto
  margin-top: 100px
+ 
  &-block
   &__title
    width: 544px
@@ -86,22 +88,17 @@ header
    letter-spacing: 0.32px
    margin-bottom: 37px
   &__button
-   width: 184px
-   height: 49px
-   border-radius: 24px
-   background-color: #ffffff
-   background-image: linear-gradient(-18deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%)
+   
 
 // services section
 .services
-  margin-top: 200px
   background-color: #f8f8f8
-  &-main *
-    // border: 1px solid red
+
   &-main 
     background-color: #f8f8f8
     position: relative
     top: -115px
+    z-index: 1
     &__title
       padding-bottom: 60px
       padding-top: 60px
@@ -269,6 +266,36 @@ header
 .news-blocks__block___img:hover img
   filter: brightness(100%)
   cursor: pointer
+
+// features
+.features
+  min-height: 572px
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #000000
+  text-align: right
+  background: #000 url(../img/air-section/features-bg.jpg) center no-repeat
+  background-size: cover
+  &-text
+    &__title
+      margin-bottom: 30px
+      font-size: 61px
+      color: #fff
+      font-weight: bold
+      line-height: 0.918
+      
+    &__descr
+      margin-bottom: 30px
+      font-size: 16px
+      color: rgb(255, 255, 255)
+      line-height: 1.875
+      
+
+
+
+
+  
 
 
 
